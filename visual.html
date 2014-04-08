@@ -9,6 +9,9 @@
 <title>Visual Tab</title>
 <link rel="stylesheet" href="./styles/mystyles.css">
 <link rel="stylesheet" href="./styles/visual.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 
 <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>	
@@ -35,6 +38,12 @@
 
    <a href="index.html" title="Index Page">Index</a>
   
+  
+  <script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
   
 </body>
 
