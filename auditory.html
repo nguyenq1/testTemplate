@@ -9,10 +9,55 @@
 <title>Auditory Tab</title>
 <link rel="stylesheet" href="./styles/mystyles.css">
 <link rel="stylesheet" href="./styles/auditory.css">
+
+<link href="src/ytv.css" type="text/css" rel="stylesheet" />
+<script src="src/ytv.js" type="text/javascript"></script>
+
+
+
+<title>YouTube TV</title>
+		<link href="../src/ytv.css" type="text/css" rel="stylesheet" />
+		<link href="assets/demo.css" type="text/css" rel="stylesheet" />
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+
+
 </head>
 
 <!-- the body is where everything goes that users should see-->
-<body>
+	<body class="playlists">
+	
+	
+	
+		<div id="frame"></div>
+		
+		<div class="description">
+			<p>This demo allows users to select playlists (if playlists exist)</p>
+			<p class="special">&larr; Click Here</p>
+		</div>
+		
+		<script type="text/javascript" src="../src/ytv.js"></script>
+		<script>
+			window.onload = function(){
+				
+				
+				window.controller = new YTV('frame', {
+					user: 'Centicerise',
+					accent: '#008D54',
+					browsePlaylists: true,
+					controls: false,
+					autoplay: true
+				});
+		
+			};
+		</script>
+	
+	
+	
  <div id="wrapper">
             
             <header class="main">
